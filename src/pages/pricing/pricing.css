@@ -1,0 +1,149 @@
+.pricing-head {
+    margin-top: 3.4rem;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.pricing-head, 
+.pricing-container h2, 
+.pricing-container p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.pricing-container h2 {
+    font-size: 2rem;
+    color: var(--color-primary);
+    line-height: 1.5;
+    gap: 0.8rem;
+}
+
+.pricing-container p {
+    font-weight: 200;
+    font-size: 1rem;
+    margin-top: 2rem;
+    padding: 0 10rem;
+}
+
+.pricing-container span {
+    margin-left: .5rem;
+    border-bottom: 3px dashed var(--color-secondary);
+}
+
+.pricing-wrapper {
+    margin-top: 5rem;
+}
+
+.pricing-card {
+    position: relative;
+    border: 2px solid #f0f0fa;
+    margin: 0 auto;
+    width: 30%;
+    height: 90vh;
+    padding: 2rem;
+    text-align: center;
+    transition: var(--transition);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+.pricing-card:hover {
+    border: 2px solid var(--color-secondary);
+}
+
+
+.pricing-card h4 {
+    color: var(--color-primary);
+}
+
+.pricing-card h2 {
+    margin-top: 6rem;
+    border: 2px solid #f0f0fa;
+    background-color: var(--color-primary);
+    color: #fff;
+    cursor: pointer;
+    padding: 1.2rem;
+    border-radius: 10px 40px 30px;
+    -webkit-border-radius: 10px 40px 30px;
+    -moz-border-radius: 10px 40px 30px;
+    -ms-border-radius: 10px 40px 30px;
+    -o-border-radius: 10px 40px 30px;
+}
+
+.pricing-card h2:hover {
+    background: var(--color-secondary);
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+.pricing-card h4 {
+    color: var(--color-primary);
+    font-size: 1.8rem;
+    margin-bottom: 1.4rem;
+
+}
+
+.pricing-card summary {
+    color: var(--color-secondary); 
+    font-size: 1.4rem;
+    gap: 0.5rem;
+    white-space: nowrap;
+    margin-bottom: 1.4rem;
+}
+
+.pricing-card h3 {
+    color: gray;
+    margin-bottom: 2.6rem;
+    white-space: nowrap;
+}
+
+.pricing-card p {
+    font-size: 3rem;
+    color: var(--color-primary);
+}
+
+.pricing-card small {
+    margin-top: 2.4rem;
+    color: gray;
+    font-size: 1.2rem;
+}
+
+.pricing-card text {
+    color: var(--color-primary);
+    font-size: 2rem;
+    white-space: nowrap;
+}
+
+.pricing-icon {
+    font-size: 6rem;
+    text-decoration: none;
+    color: var(--color-secondary);
+}
+
+
+/* MEDIA QUERIES (for medium and small screen) */
+@media screen and (max-width: 50em) {
+    .pricing-card {
+        width: 50%;
+        height: 100vh;
+        padding: 3rem;
+    }
+
+    .pricing-container h2 {
+        white-space: nowrap;
+        text-align: left;
+    }
+}

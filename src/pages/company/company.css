@@ -1,0 +1,126 @@
+.companys {
+    padding: 10rem 0 5rem;
+}
+
+.company-head {
+    margin-top: 5rem;
+}
+
+.company-wrapper {
+    width: 25rem;
+    margin-inline: auto;
+    margin: 0 22rem;
+}
+
+.company {
+    margin-top: 5rem;
+    position: relative;
+    padding: 2rem;
+    border: 2px solid var(--color-secondary);
+    transition: var(--transition);
+    border-radius: 20px 0 20px 0;
+    -webkit-border-radius: 20px 0 20px 0;
+    -moz-border-radius: 20px 0 20px 0;
+    -ms-border-radius: 20px 0 20px 0;
+    -o-border-radius: 20px 0 20px 0;
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+.company:hover {
+    background: var(--color-primary);
+    color: white;
+}
+
+.company-avatar {
+    height: 4rem;
+    width: 4rem;
+    position: absolute;
+    overflow: hidden;
+    border: 1px solid transparent;
+    top: -2rem;
+    left: calc(50% - 2rem);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.company:hover .company-avatar {
+    border: 1px solid var(--color-secondary);
+}
+
+.company div {
+    text-align: center;
+}
+
+.company p {
+    margin-top: 1rem;
+    font-style: italic;
+}
+.company h4 {
+    margin-top: 1rem;
+    color: var(--color-secondary);
+}
+
+.company small {
+    margin-top: 0.3rem;
+    font-size: .7rem;
+    color: var(--color-partial);
+}
+
+.company:hover small {
+    color: #caf28e;
+}
+
+.companys-container h2 {
+   padding-right: 35rem;
+   font-size: 1.8rem;
+   color: var(--color-primary);
+}
+
+.companys-container span {
+    border-bottom: 3px dashed var(--color-secondary);
+}
+
+.companys-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+    gap: 1rem;
+}
+
+.companys-btn {
+    font-size: 1.8rem;
+    background: transparent;
+}
+
+.companys-btn svg {
+    fill: var(--color-secondary);
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.companys-btn svg:hover {
+    fill: var(--color-primary);
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+/* MEDIA QUERIES (for medium and small screen) */
+@media screen and (max-width: 40em) {
+    .companys-container h2 {
+        white-space: nowrap;
+    }
+
+    .company-wrapper {
+        margin-left: 2rem;
+    }
+}
